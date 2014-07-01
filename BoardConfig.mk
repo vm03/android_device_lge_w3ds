@@ -5,7 +5,6 @@ USE_CAMERA_STUB := true
 
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
-#TARGET_BOARD_PLATFORM := unknown
 TARGET_BOARD_PLATFORM := msm8610
 
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno302
@@ -38,5 +37,3 @@ TARGET_KERNEL_SOURCE := kernel/motorola/msm8226
 TARGET_KERNEL_CONFIG := w3ds_global_com_defconfig
 
 BOARD_HAS_NO_SELECT_BUTTON := true
-
-TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/backlight/lm3530/brightness\"
