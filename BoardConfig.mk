@@ -1,7 +1,7 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/lg/w3ds/BoardConfigVendor.mk
+-include vendor/lge/w3ds/BoardConfigVendor.mk
 
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
@@ -24,10 +24,10 @@ TARGET_BOOTLOADER_BOARD_NAME := w3ds
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=w3ds user_debug=31 msm_rtb.filter=0x37
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
-TARGET_KERNEL_SOURCE := kernel/lg/w3ds
+TARGET_KERNEL_SOURCE := kernel/lge/w3ds
 TARGET_KERNEL_CONFIG := w3ds_global_com_defconfig
 BOARD_KERNEL_SEPARATED_DT := true
-BOARD_CUSTOM_BOOTIMG_MK := device/lg/w3ds/mkbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/lge/w3ds/mkbootimg.mk
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x01e00000
 
 # fix this up by examining /proc/mtd on a running device
