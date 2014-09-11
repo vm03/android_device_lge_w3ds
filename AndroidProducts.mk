@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/device_w3ds.mk
+    $(LOCAL_DIR)/full_w3ds.mk

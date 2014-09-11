@@ -1,18 +1,12 @@
-## Specify phone tech before including full_phone
-$(call inherit-product, vendor/cm/config/gsm.mk)
-
-# Release name
-PRODUCT_RELEASE_NAME := w3ds
-
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-# Inherit device configuration
-$(call inherit-product, device/lge/w3ds/device_w3ds.mk)
+# Boot animation
+TARGET_SCREEN_WIDTH := 320
+TARGET_SCREEN_HEIGHT := 480
 
-## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := w3ds
+# Release name
+PRODUCT_RELEASE_NAME := LG L40
 PRODUCT_NAME := cm_w3ds
-PRODUCT_BRAND := lge
-PRODUCT_MODEL := w3ds
-PRODUCT_MANUFACTURER := lge
+
+$(call inherit-product, device/lge/w3ds/full_w3ds.mk)
