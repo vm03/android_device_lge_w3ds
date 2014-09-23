@@ -304,3 +304,4 @@ vendor/lib/libmm-abl.so
 
 system/lib/libaudioroute.so
 system/lib/hw/sensors.default.so
+system/bin/mpdecision
