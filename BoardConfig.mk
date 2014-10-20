@@ -48,7 +48,7 @@ BOARD_KERNEL_SEPARATED_DT := true
 BOARD_CUSTOM_BOOTIMG_MK := device/lge/w3ds/mkbootimg.mk
 TARGET_KERNEL_SOURCE := kernel/lge/w3ds
 TARGET_KERNEL_CONFIG := w3ds_global_com_defconfig
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 user_debug=31 msm_rtb.filter=0x37 androidboot.hardware=w3ds
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 user_debug=31 msm_rtb.filter=0x37 androidboot.hardware=w3ds androidboot.selinux=disabled
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
@@ -70,9 +70,9 @@ BOARD_USES_ALSA_AUDIO := true
 BOARD_USES_FLUENCE_INCALL := true
 BOARD_USES_SEPERATED_AUDIO_INPUT := true
 BOARD_USES_SEPERATED_VOICE_SPEAKER := true
-#TARGET_QCOM_AUDIO_VARIANT := caf
+TARGET_QCOM_AUDIO_VARIANT := caf
 TARGET_USES_QCOM_COMPRESSED_AUDIO := true
-TARGET_QCOM_MEDIA_VARIANT := caf
+TARGET_QCOM_MEDIA_VARIANT := caf-new
 
 # GPS
 TARGET_NO_RPC := true
@@ -80,12 +80,14 @@ TARGET_NO_RPC := true
 # Graphics
 BOARD_EGL_CFG := device/lge/w3ds/prebuilt/egl.cfg
 TARGET_DISPLAY_USE_RETIRE_FENCE := true
-TARGET_QCOM_DISPLAY_VARIANT := mdss
+TARGET_QCOM_DISPLAY_VARIANT := caf-new
 USE_OPENGL_RENDERER := true
-TARGET_USES_C2D_COMPOSITION := true
+TARGET_USES_C2D_COMPOSITION :=
 TARGET_USES_ION := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
+MAX_EGL_CACHE_KEY_SIZE := 12*1024
+MAX_EGL_CACHE_SIZE := 2048*1024
 
 # Use qcom power hal
 TARGET_POWERHAL_VARIANT := qcom
