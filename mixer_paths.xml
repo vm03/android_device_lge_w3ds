@@ -409,6 +409,26 @@
         <ctl name="RX1 Digital Volume" value="60" />
     </path>
 
+
+<!-- VoIP -->
+    <path name="voip-handset-comm">
+        <path name="handset" />
+        <ctl name="RX1 Digital Volume" value="60" />
+    </path>
+    
+    <path name="voip-headset-comm">
+        <path name="headphones" />
+        <ctl name="RX1 Digital Volume" value="65" />
+        <ctl name="RX2 Digital Volume" value="65" />
+    </path>
+
+    <path name="voip-speaker-comm">
+        <path name="speaker" />
+        <ctl name="RX3 Digital Volume" value="70" />
+        <ctl name="SPK DRV Volume" value="8" />
+    </path>
+<!-- -->
+
     <path name="voice-speaker">
         <path name="speaker" />
         <!-- LGE added -->
