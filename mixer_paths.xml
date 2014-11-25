@@ -427,6 +427,19 @@
         <ctl name="RX3 Digital Volume" value="70" />
         <ctl name="SPK DRV Volume" value="8" />
     </path>
+
+    <path name="voip-main-mic-comm">
+	<path name="handset-mic"/>
+    </path>
+
+    <path name="voip-sub-mic-comm">
+	<path name="handset-mic"/>
+    </path>
+
+    <path name="voip-headset-mic-comm">
+	<path name="headset-mic"/>
+    </path>
+
 <!-- -->
 
     <path name="voice-speaker">
