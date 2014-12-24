@@ -28,7 +28,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=160
 
 PRODUCT_COPY_FILES += \
-    device/lge/w3ds/mixer_paths.xml:system/etc/mixer_paths.xml
+    device/lge/w3ds/mixer_paths.xml:system/etc/mixer_paths.xml \
+    device/lge/msm8610-common/prebuilt/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
 
 PRODUCT_LOCALES := en_US
 PRODUCT_LOCALES += mdpi
