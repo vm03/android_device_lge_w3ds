@@ -36,5 +36,7 @@ PRODUCT_LOCALES += mdpi
 PRODUCT_AAPT_CONFIG := normal mdpi
 PRODUCT_AAPT_PREF_CONFIG := mdpi
 
+$(call inherit-product, vendor/lge/w3ds/w3ds-vendor.mk)
+
 # Inherit from msm8610-common
 $(call inherit-product, device/lge/msm8610-common/msm8610.mk)
