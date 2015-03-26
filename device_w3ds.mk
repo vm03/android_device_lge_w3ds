@@ -25,7 +25,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.device=w3ds \
     ro.product.model=LG-D170 \
     persist.radio.multisim.config=dsds \
-    ro.sf.lcd_density=160
+    ro.sf.lcd_density=160 \
+    ro.config.low_ram=true \
+    persist.sys.force_highendgfx=true
 
 PRODUCT_COPY_FILES += \
     device/lge/w3ds/mixer_paths.xml:system/etc/mixer_paths.xml \
