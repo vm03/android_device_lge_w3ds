@@ -31,6 +31,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_COPY_FILES += \
     device/lge/w3ds/mixer_paths.xml:system/etc/mixer_paths.xml \
+    device/lge/w3ds/thermal-engine-8610.conf:system/etc/thermal-engine-8610.conf \
     device/lge/msm8610-common/prebuilt/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
     device/lge/w3ds/fstab.msm8610:root/fstab.msm8610
 
