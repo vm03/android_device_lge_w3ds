@@ -508,7 +508,7 @@
     <path name="camcorder-mic">
         <path name="handset-mic" />
         <!-- LGE added -->
-        <ctl name="DEC1 Volume" value="70" />
+        <ctl name="DEC1 Volume" value="90" />
         <ctl name="ADC1 Volume" value="60" />
     </path>
 
