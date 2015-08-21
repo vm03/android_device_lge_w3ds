@@ -27,7 +27,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.multisim.config=dsds \
     ro.sf.lcd_density=160 \
     ro.config.low_ram=true \
-    persist.sys.force_highendgfx=true
+    persist.sys.force_highendgfx=true \
+    dalvik.vm.heaptargetutilization=0.25
 
 PRODUCT_COPY_FILES += \
     device/lge/w3ds/mixer_paths.xml:system/etc/mixer_paths.xml \
