@@ -28,4 +28,7 @@ BOARD_CUSTOM_BOOTIMG_MK := device/lge/w3ds/mkbootimg.mk
 
 DEVICE_RESOLUTION := 320x480
 
+# Charger
+BOARD_HEALTHD_CUSTOM_CHARGER_RES := device/lge/w3ds/charger/images
+
 -include vendor/lge/w3ds/BoardConfigVendor.mk
