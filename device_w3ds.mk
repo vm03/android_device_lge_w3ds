@@ -28,7 +28,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=160 \
     ro.config.low_ram=true \
     persist.sys.force_highendgfx=true \
-    dalvik.vm.heaptargetutilization=0.25
+    dalvik.vm.heaptargetutilization=0.25 \
+    hw.fm.internal_antenna=true
 
 PRODUCT_COPY_FILES += \
     device/lge/w3ds/mixer_paths.xml:system/etc/mixer_paths.xml \
